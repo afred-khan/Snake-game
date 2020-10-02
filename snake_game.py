@@ -157,6 +157,7 @@ while True:
     for segment in segments:
         if segment.distance(head) < 20:
             time.sleep(1)
+            head.goto(0,0)
             head.direction = "stop"
 
             # Hide the segments
